@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+
+{% endblock %}
+
+{% block header %}
+<section class="logo_header">
+    <div class="container">
+    <div class="logo_div">
+        <div class="logo_h1_title">
+            <span class="logo_1"><i class="fa-solid fa-earth-europe"></i></span>
+        </div>
+        <h1 class="logo_h1">
+            <span class="logo_1"> CARBON</span>  
+            <span class="logo_2">App</span>
+        </h1>
+    </div>
+    
+    <div class="mission_div">
+        <div class="btn-group">
+            <a type="button" class="btn btn-success" href="{{url_for('carbon_calculator.new_entry')}}">New Entry</a>
+            <a type="button" class="btn btn-success" href="{{url_for('carbon_calculator.your_data')}}">Your Data</a>
+        </div>
+    </div>
+    </div>
+</section>
+{% endblock%}
+
+{% block content %}
+<section class="developers">
+    <div class="container">
+        <div class="header">
+            <h2>Developers</h2>
+            <p>Here is a display of the developers from NHH</p>
+        </div>
+        <div class="div_developers">
+            <div class="developer">
+                <div>
+                <img src="static/images/Elise.jpg" style="width:200px; height:266.66px;" alt="Bilde av Elise Isolde Stenevik">                <h3>Elise Isolde Stenevik</h3>
+                <p>  
+                   Elise kommer fra Florø, jobber for tiden i England og går 3.kull på NHH. 
+                </p>
+                </div>
+            </div>
+            <div class="developer">
+                <div>
+                <img src="static/images/IMG_2530.jpeg" style="width:200px;" alt="Bilde av Andrè Hansen Skarholm">
+                <h3>Andrè Hansen Skarholm</h3>
+                <p>  
+                     Andre kommer fra Asker i Norge og går 1.kull på NHH. 
+                </p>
+                </div>
+            </div>
+            <div class="developer">
+                <div>
+                <img src="static/images/IMG_2526.jpeg" style="width:200px;" alt="Bilde av Franziska Roszinski">                <h3>Franziska Roszinski</h3>
+                <p>  
+                    Franziska kommer fra Kristiansand i Norge og går 3.kull på NHH. 
+                </p>
+                </div>
+                
+            </div>
+           
+            <div class="developer">
+                <div>
+                <img src="static/images/IMG_2537.jpeg" style="width:200px;" alt="Bilde av Aksel Bjorhovde">                <h3>Aksel Bjorhovde</h3>
+                <p>  
+                    Aksel kommer fra Oslo i Norge og går 3.kull på NHH. 
+                </p>
+                </div>
+            </div>
+                <div class="developer">
+                <div>
+                <img src="static/images/IMG_2533.jpeg" style="width:200px;" alt="Bilde av Serenne Vikebø">                <h3>Serenne Vikebø</h3>
+                <p>  
+                    Serenne kommer fra Bergen i Norge og går 3.kull på NHH. 
+                </p>
+                </div>
+              
+                </div>
+             <div class="developer">
+                <div>
+                <img src="static/images/IMG_2540.jpeg" style="width:200px;" alt="Bilde av Mathias Haughom">                <h3>Mathias Haughom</h3>
+                <p>  
+                    Mathias kommer fra Vesterålen i Nord-Norge og går 2.kull på NHH. 
+                </p>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+no
